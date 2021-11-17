@@ -50,3 +50,7 @@ div{
 #mask7{
     clip-path: url(#svgMask4);
 }
+
+#mask8{
+    clip-path: url(#svgMask5);
+}
