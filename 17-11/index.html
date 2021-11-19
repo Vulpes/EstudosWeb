@@ -9,15 +9,17 @@
     <!-- <meta http-equiv="refresh" content="30"> -->
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contatos</a>
-        <div class="indicator" id="indicator"></div>
-        
-    </nav>
+    <div class="headernav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#sectionSobre">Projetos</a>
+            <a href="#sectionContatos">Contatos</a>
+            <div class="indicator" id="indicator"></div>
+            
+        </nav>
+    </div>
 
-    <section class="sectionSobre">
+    <section class="sectionHome" id="sectionHome">
         <div class="containerSobre">
             <div class="sobre">
                 <div class="titulo">
@@ -31,8 +33,11 @@
                         Possimus autem quisquam culpa? Soluta?
                     </p>
                 </div>
+                <p class="detalhesSobre">Mais alguma informação pequena de detalhes para concluir</p>
             </div>
         </div>
+    </section>
+    <section class="sectionSobre" id="sectionSobre">
         <div class="containerImgs">
             <div class="sobre-imgs">
                 <div class="princ-prod">
@@ -66,6 +71,16 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="sectionContatos" id="sectionContatos">
+        <footer class="contatos">
+            <p class="contatosTitulo">Contatos</p>
+            <p class="contatosInfos">
+                Telefone: (99) 99999-9999
+                E-mail: endereco@gmail.com
+            </p>
+        </footer>
     </section>
 
     <script src="./hideImgs.js"></script>

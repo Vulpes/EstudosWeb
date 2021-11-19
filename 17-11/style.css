@@ -30,6 +30,12 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -76,13 +82,13 @@ select {
 
 body{
     background-color: black;
-    padding: 20vw 0;
+    padding: 10vw 0;
     color: white;
 }
 
 nav{
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 5vh;
     right: 0;
     left: 0;
@@ -90,6 +96,17 @@ nav{
     display: table;
     margin: 0 auto;
     transform: translateY(-50%);
+    background-color: black;
+    z-index: 1;
+}
+
+.headernav{
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    background-color: black;
+    z-index: 1;
 }
 
 nav a{
@@ -241,6 +258,12 @@ nav a:nth-child(3):hover ~ #indicator{
 
 .stProds{
    
+}
+
+.detalhesSobre{
+    margin-top: 50vh;
+    font-size: small;
+    text-align: center;
 }
 
 .img-prod > img{
